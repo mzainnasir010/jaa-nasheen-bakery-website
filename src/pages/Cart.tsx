@@ -32,7 +32,7 @@ const Cart = () => {
 
   // Calculate totals
   const subtotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-  const shippingEstimate = subtotal >= 50 ? 0 : 5.99; // Free shipping over rs. 1500
+  const shippingEstimate = subtotal >= 1500 ? 0 : 500; // Free shipping over rs. 1500
   const taxEstimate = (subtotal * 0.08).toFixed(2); // 8% tax
   const totalPrice = (subtotal + shippingEstimate + parseFloat(taxEstimate) - discount).toFixed(2);
 
