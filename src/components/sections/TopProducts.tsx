@@ -81,7 +81,7 @@ const TopProducts = () => {
       <div className="w-full px-4 sm:px-6 lg:px-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
-            Top Products
+            Top <span className="text-primary italic">Products</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Discover our most beloved artisanal creations, baked fresh daily with premium ingredients

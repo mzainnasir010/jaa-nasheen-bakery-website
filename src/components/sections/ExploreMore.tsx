@@ -278,7 +278,7 @@ const ExploreMore = () => {
       <div className="w-full px-4 sm:px-6 lg:px-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
-            Explore More
+            Explore <span className="text-primary italic">More</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Browse our complete collection of artisanal baked goods by category
