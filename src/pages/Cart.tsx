@@ -51,7 +51,7 @@ const Cart = () => {
   };
 
   // Free shipping progress
-  const freeShippingThreshold = 50;
+  const freeShippingThreshold = 1500;
   const progressPercentage = Math.min((subtotal / freeShippingThreshold) * 100, 100);
 
   return (
@@ -184,7 +184,7 @@ const Cart = () => {
                     <p className="text-muted-foreground mb-2">
                       {subtotal >= freeShippingThreshold 
                         ? "Congratulations! You qualify for free shipping."
-                        : `Spend $${(freeShippingThreshold - subtotal).toFixed(2)} more for free shipping!`}
+                        : `Spend Rs. ${(freeShippingThreshold - subtotal).toFixed(2)} more for free shipping!`}
                     </p>
                     <div className="w-full bg-muted h-2 rounded-full">
                       <div 
@@ -217,7 +217,7 @@ const Cart = () => {
                       </Button>
                     </div>
                     {discount > 0 && (
-                      <p className="text-primary mt-2">Discount applied: -${discount.toFixed(2)}</p>
+                      <p className="text-primary mt-2">Discount applied: -Rs. {discount.toFixed(2)}</p>
                     )}
                   </CardContent>
                 </Card>
@@ -234,7 +234,7 @@ const Cart = () => {
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Shipping Estimate</span>
                         <span className="text-foreground">
-                          {shippingEstimate === 0 ? "Free" : `$${shippingEstimate.toFixed(2)}`}
+                          {shippingEstimate === 0 ? "Free" : `Rs. ${shippingEstimate.toFixed(2)}`}
                         </span>
                       </div>
                       <div className="flex justify-between">
