@@ -171,7 +171,7 @@ const Services = () => {
                     </div>
                     
                     <div className="flex items-center justify-between">
-                      <span className="text-lg font-bold text-primary">{service.price}</span>
+                      <span className="text-base font-bold text-primary">{service.price}</span>
                       <Button variant="outline" size="sm" className="group-hover:bg-primary group-hover:text-primary-foreground transition-smooth">
                         Learn More
                       </Button>

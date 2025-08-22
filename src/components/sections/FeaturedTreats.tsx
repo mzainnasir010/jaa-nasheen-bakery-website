@@ -109,7 +109,7 @@ const FeaturedTreats = () => {
                     {treat.description}
                   </p>
                   <div className="flex items-center justify-center space-x-4">
-                    <span className="text-2xl font-bold text-primary">RS {treat.price}</span>
+                    <span className="text-1xl font-bold text-primary">RS {treat.price}</span>
                     <Button 
                       variant="hero" 
                       size="sm" 

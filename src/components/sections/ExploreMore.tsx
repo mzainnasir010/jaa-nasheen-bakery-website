@@ -327,7 +327,7 @@ const ExploreMore = () => {
                         {product.name}
                       </h3>
                       <div className="flex items-center space-x-2">
-                        <span className="text-2xl font-bold text-primary">Rs. {product.price}</span>
+                        <span className="text-1xl font-bold text-primary">Rs. {product.price}</span>
                         <Button variant="ghost" size="icon" className="h-8 w-8">
                           <Info className="w-4 h-4" />
                         </Button>

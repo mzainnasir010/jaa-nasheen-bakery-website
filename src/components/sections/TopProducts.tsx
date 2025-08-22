@@ -28,7 +28,7 @@ const TopProducts = () => {
       name: "Artisan Sourdough",
       price: 400,
       image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&h=400&fit=crop&crop=center",
-      description: "Traditional sourdough with perfect crust",
+      description: "Traditional sourdough",
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ const TopProducts = () => {
       name: "Rustic Country Loaf",
       price: 450,
       image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop&crop=center",
-      description: "Hearty whole grain country bread",
+      description: "Whole grain country bread",
     },
     { id: 5, 
       name: "Chocolate Croissant", 
@@ -62,7 +62,7 @@ const TopProducts = () => {
       name: "Seeded Bagel",
       price: 720,
       image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop&crop=center",
-      description: "Everything bagel with mixed seeds",
+      description: "Bagel with mixed seeds",
     },
   ];
 
@@ -111,7 +111,7 @@ const TopProducts = () => {
                       {product.name}
                     </h3>
                     <div className="flex items-center space-x-2">
-                      <span className="text-2xl font-bold text-primary">Rs. {product.price}</span>
+                      <span className="text-1xl font-bold text-primary">Rs. {product.price}</span>
                       <Button variant="ghost" size="icon" className="h-8 w-8">
                         <Info className="w-4 h-4" />
                       </Button>

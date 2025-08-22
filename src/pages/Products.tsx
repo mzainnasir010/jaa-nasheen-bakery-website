@@ -219,7 +219,7 @@ const Products = () => {
                       </h3>
                       
                       <div className="flex items-center justify-between">
-                        <span className="text-2xl font-bold text-primary">Rs. {product.price}</span>
+                        <span className="text-1xl font-bold text-primary">Rs. {product.price}</span>
                         <Button variant="bakery" size="sm" disabled={!product.inStock} onClick={() => addToCart({ id: product.id, name: product.name, image: product.image, price: product.price })}>
                           {product.inStock ? "Order" : "Sold Out"}
                         </Button>

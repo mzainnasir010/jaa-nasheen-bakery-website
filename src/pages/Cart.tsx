@@ -26,7 +26,7 @@ const Cart = () => {
   const [discount, setDiscount] = useState<number>(0);
 
   const recommendedProducts: RecommendedProduct[] = [
-    { id: 4, name: "Lemon Tart", image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=300&h=300&fit=crop", price: 5.99 },
+    { id: 3, name: "Red Velvet Cake", image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=400&fit=crop", price: 3500 },    
     { id: 5, name: "Sourdough Loaf", image: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=300&h=300&fit=crop", price: 6.50 },
   ];
 

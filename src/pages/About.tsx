@@ -44,7 +44,7 @@ const About = () => {
       name: "Jibran Khalil",
       role: "Head Baker & Founder",
       image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1599566150163-29194dcaad36",
       description:
         "With 25 years of baking experience, Jibran founded JaaNasheen with a vision of bringing artisanal quality to everyday life.",
     },
@@ -60,7 +60,7 @@ const About = () => {
       name: "Mahnoor Saeed",
       role: "Bread Artisan",
       image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1607746882042-944635dfe10e",
       description:
         "Mahnoor specializes in traditional bread-making techniques, ensuring every loaf meets our high standards.",
     },
