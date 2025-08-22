@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bakery Design System - Premium dark theme with warm golden accents */
+
+@layer base {
+  :root {
+    /* Light Theme - Warm bakery colors */
+    --background: 35 25% 97%;            /* Warm cream white */
+    --foreground: 220 15% 15%;           /* Dark charcoal text */
+    
+    --card: 35 25% 99%;                  /* Off-white cards */
+    --card-foreground: 220 15% 15%;
+    
+    --popover: 35 25% 99%;
+    --popover-foreground: 220 15% 15%;
+    
+    /* Brand Colors */
+    --primary: 25 95% 53%;               /* Rich golden amber */
+    --primary-foreground: 35 25% 97%;
+    
+    --secondary: 35 15% 85%;             /* Light warm beige */
+    --secondary-foreground: 220 15% 15%;
+    
+    --muted: 35 15% 92%;                 /* Light muted */
+    --muted-foreground: 220 15% 45%;
+    
+    --accent: 20 25% 90%;                /* Light warm accent */
+    --accent-foreground: 220 15% 15%;
+    
+    /* Interactive States */
+    --destructive: 0 65% 52%;
+    --destructive-foreground: 35 25% 97%;
+    
+    --border: 35 15% 88%;
+    --input: 35 15% 95%;
+    --ring: 25 95% 53%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Bakery Theme Variables */
+    --gold-gradient: linear-gradient(135deg, hsl(25 95% 53%), hsl(35 85% 48%));
+    --warm-gradient: linear-gradient(180deg, hsl(35 25% 95%), hsl(35 25% 97%));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 40px hsl(25 95% 53% / 0.15);
+    --shadow-elegant: 0 8px 32px hsl(220 15% 4% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Theme - Premium dark with warm accents */
+    --background: 220 15% 8%;            /* Deep charcoal */
+    --foreground: 35 25% 85%;            /* Warm cream */
+    
+    --card: 220 15% 12%;                 /* Slightly lighter charcoal */
+    --card-foreground: 35 25% 85%;
+    
+    --popover: 220 15% 12%;
+    --popover-foreground: 35 25% 85%;
+    
+    /* Brand Colors */
+    --primary: 25 95% 53%;               /* Rich golden amber */
+    --primary-foreground: 220 15% 8%;
+    
+    --secondary: 20 25% 45%;             /* Warm brown/rust */
+    --secondary-foreground: 35 25% 95%;
+    
+    --muted: 220 15% 15%;                /* Muted dark */
+    --muted-foreground: 35 15% 65%;
+    
+    --accent: 35 45% 25%;                /* Deep warm brown */
+    --accent-foreground: 35 25% 95%;
+    
+    /* Interactive States */
+    --destructive: 0 65% 52%;
+    --destructive-foreground: 35 25% 95%;
+    
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 25 95% 53%;
+    
+    /* Custom Bakery Theme Variables */
+    --hero-gradient: linear-gradient(135deg, hsl(220 15% 8% / 0.95), hsl(220 15% 12% / 0.9));
+    --gold-gradient: linear-gradient(135deg, hsl(25 95% 53%), hsl(35 85% 48%));
+    --warm-gradient: linear-gradient(180deg, hsl(220 15% 12%), hsl(220 15% 8%));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 40px hsl(25 95% 53% / 0.15);
+    --shadow-elegant: 0 8px 32px hsl(220 15% 4% / 0.4);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  .gold-gradient {
+    background: var(--gold-gradient);
+  }
+  
+  .warm-gradient {
+    background: var(--warm-gradient);
+  }
+  
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
