@@ -47,7 +47,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`text-2xl font-medium transition-smooth hover:text-primary ${
+                className={`text-1xl font-medium transition-smooth hover:text-primary ${
                   isActiveLink(item.href)
                     ? "text-primary"
                     : "text-muted-foreground"
