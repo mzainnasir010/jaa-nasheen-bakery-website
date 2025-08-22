@@ -54,7 +54,7 @@ const FeaturedTreats = () => {
       price: 380,
       image: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=300&h=300&fit=crop",
       rating: 4.9,
-      description: "Classic muffin with chocolate chips",
+      description: "Muffin with chocolate chips",
 
     },
   ];
