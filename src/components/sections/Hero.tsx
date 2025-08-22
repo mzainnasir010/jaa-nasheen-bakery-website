@@ -85,7 +85,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.h1
-            className="text-5xl md:text-4xl lg:text-5xl font-playfair font-bold text-foreground leading-tight mb-8 md:mb-24"
+            className="text-5xl md:text-4xl lg:text-6xl font-playfair font-bold text-foreground leading-tight mb-8 md:mb-24"
             variants={itemVariants}
           >
             <span className="block text-primary">Sweet Treats,</span>
